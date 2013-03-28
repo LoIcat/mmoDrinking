@@ -14,7 +14,7 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="get.drunk.with.mmodrinking.MainScreenActivity"
+            android:name="get.drunk.with.mmodrinking.StartPartyActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

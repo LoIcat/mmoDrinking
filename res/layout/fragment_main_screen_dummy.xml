@@ -6,11 +6,45 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainScreenActivity$DummySectionFragment" >
+    tools:context=".MainScreenActivity$DummySectionFragment">
 
     <TextView
         android:id="@+id/section_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/partyNameEditText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/partyName"
+        android:inputType="text" >
+
+        <requestFocus />
+    </EditText>
+
+    <CheckBox
+        android:id="@+id/girlsCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/partyNameEditText"
+        android:layout_toLeftOf="@+id/boysCheckBox"
+        android:text="@string/girlsCheckboxText" />
+
+    <CheckBox
+        android:id="@+id/boysCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/partyNameEditText"
+        android:text="@string/boysCheckboxText" />
+
+    <Button
+        android:id="@+id/launchPartyButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/girlsCheckBox"
+        android:text="@string/launchPartyButton" />
 
 </RelativeLayout>
